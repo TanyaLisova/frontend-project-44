@@ -1,9 +1,8 @@
 #!/usr/bin/env node
-import { askName }  from "../src/cli.js"
+import { greeting }  from "../src/index.js"
 import readlineSync from  'readline-sync';
 
 let count = 0
-// let rounds = 3
 
 const generateNum = () => {
     return Math.floor(Math.random() * 100) + 1;
@@ -16,9 +15,9 @@ const answer = () => {
 }
 
 const game = () => {
-    console.log('Welcome to the Brain Games!');
-    const name = askName()
-    console.log(`Hello, ${name}`);
+    // console.log('Welcome to the Brain Games!');
+    const name = greeting()
+    // console.log(`Hello, ${name}`);
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
     while (count < 3) {
