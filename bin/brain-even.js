@@ -15,9 +15,8 @@ const answer = () => {
 }
 
 const game = () => {
-    // console.log('Welcome to the Brain Games!');
     const name = greeting()
-    // console.log(`Hello, ${name}`);
+
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
     while (count < 3) {

@@ -14,7 +14,6 @@ const game = () => {
         return readlineSync.question('Your answer: ');
     }
     
-    let operator
     let count = 0
     
     while (count < 3) {
@@ -42,7 +41,7 @@ const game = () => {
         }
         console.log(`Question: ${num1} ${symbol} ${num2}`);
         let answ = answer()
-        if (parseInt(answ, 10) === result) {
+        if (Number.parseInt(answ, 10) === result) {
             console.log('Correct!');
             count++;
         } else {
