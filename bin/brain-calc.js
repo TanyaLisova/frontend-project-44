@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { greeting }  from "../src/index.js"
+import { genNum, greeting }  from "../src/index.js"
 import readlineSync from  'readline-sync';
 
 
@@ -8,8 +8,8 @@ const game = () => {
     const name = greeting()
     console.log('What is the result of the expression?');
     
-    const genNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
-    
+    // const genNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min)
+    // const genNum = genNum()
     const answer = () => {
         return readlineSync.question('Your answer: ');
     }
