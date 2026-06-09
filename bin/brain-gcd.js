@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 import { genNum, greeting, answer } from "../src/index.js";
-import readlineSync from "readline-sync";
 
 let count = 0;
 
