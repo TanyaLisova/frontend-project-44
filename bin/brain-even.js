@@ -1,12 +1,8 @@
 #!/usr/bin/env node
-import { greeting }  from "../src/index.js"
+import { greeting, genNum }  from "../src/index.js"
 import readlineSync from  'readline-sync';
 
 let count = 0
-
-const generateNum = () => {
-    return Math.floor(Math.random() * 100) + 1;
-}
 
 const even = (n) => n % 2 === 0;
 
@@ -20,7 +16,7 @@ const game = () => {
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
     while (count < 3) {
-        let num = generateNum() 
+        let num = genNum() 
         console.log(`Question: ${num}`);
 
         let correct = even(num) ? 'yes' : 'no'
