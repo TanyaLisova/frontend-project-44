@@ -15,7 +15,6 @@ const progress = () => {
 
   for (let i = 0; i < len; i++) {
     let currentElement = start + i * step;
-    // console.log(currentElement);
 
     seq.push(currentElement);
   }
