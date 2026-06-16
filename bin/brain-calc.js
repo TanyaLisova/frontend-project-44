@@ -51,7 +51,7 @@ const game = () => {
         }
 
     }
-    console.log(`Congratulations, ${name}`);
+    console.log(`Congratulations, ${name}!`);
 }
 
 game()

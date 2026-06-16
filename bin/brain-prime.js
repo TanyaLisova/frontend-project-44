@@ -29,6 +29,7 @@ const game = () => {
             return;
         }
   }
+  console.log(`Congratulations, ${name}!`);
 };
 
 game()
