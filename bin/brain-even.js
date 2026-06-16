@@ -16,8 +16,9 @@ const game = () => {
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
     while (count < 3) {
-        let num = genNum() 
+        let num = genNum(1, 100) 
         console.log(`Question: ${num}`);
+        
 
         let correct = even(num) ? 'yes' : 'no'
 
